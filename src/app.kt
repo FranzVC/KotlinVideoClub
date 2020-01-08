@@ -1,87 +1,28 @@
 import java.util.*
-
-open class User(val name: String, val address: String, val number: Int, val dateOfBirth: Date, val dateStarted: Date) {
-    override fun toString(): String {
-        return "name: $name, address: $address, number: $number,"
-    }
-}
-
-class Associate(name: String, address: String, number: Int, dateOfBirth: Date, dateStarted: Date, var moviesRented: MutableList<Movie> = mutableListOf()) : User(name, address, number, dateOfBirth, dateStarted) {
-    override fun toString(): String {
-        return "name: $name, address: $address, number: $number," + moviesRented.toString()
-    }
-}
-
-class Salesman(name: String, address: String, number: Int, dateOfBirth: Date, dateStarted: Date) : User(name, address, number, dateOfBirth, dateStarted)
-
-class Cashier(name: String, address: String, number: Int, dateOfBirth: Date, dateStarted: Date) : User(name, address, number, dateOfBirth, dateStarted)
-
-class Administrator(name: String, address: String, number: Int, dateOfBirth: Date, dateStarted: Date) : User(name, address, number, dateOfBirth, dateStarted)
-
-
-class Movie(val title: String, val filmedYear: Int, val directors: String, val actors: String, val language: String, val availableLanguages: String, val filmGenre: String, val duration: Int, var popularity: String, var quantity: Int) {
-    override fun toString(): String {
-        return "title: $title, filmedYear: $filmedYear, language: $language"
-    }
-}
-
-
-class VideoClub() {
-    var movies = mutableListOf<Movie>()
-    var users = mutableListOf<User>()
-    var associates = mutableListOf<Associate>()
-    var salesmans = mutableListOf<Salesman>()
-    var cashiers = mutableListOf<Cashier>()
-    var administrators = mutableListOf<Administrator>()
-
-    fun rentMovie(movieName: String, username: String) {
-        val movieFound = searchMovie(movieName)
-        movieFound?.let {
-            val associate = associates.find { it.name == username }
-            associate?.moviesRented?.add(movieFound)
-        }
-    }
-
-    private fun searchMovie(movieName: String): Movie? {
-        return movies.find { it.title == movieName }
-    }
-
-    fun findUserByName(username: String): User? {
-        return users.find { it.name == username }
-    }
-}
+var club = VideoClub()
 
 fun main(args: Array<String>) {
-    var club = VideoClub()
     var user = Associate("luis", "av. america #11", 77407521, Date(12122019), Date(20191212))
-    var movie = Movie("IT", 2018, "asdas", "dasdasdasd", "EN", "ES,EU,IT", "terror", 120, "premiere", 8)
+    var movie = Movie("IT",20.0, 2018, "asdas", "dasdasdasd", "EN", "ES,EU,IT", "terror", 120, "premiere", false,8)
 
     club.movies.add(movie)
     club.users.add(user)
+    println("ingrese su nombre de usuario")
 
     var username = readLine()
-    var option = 1
     username?.let {
         when (club.findUserByName(it)) {
             is Associate -> {
-                do {
-                    associateMenu()
-                } while (option != 0)
+                associateMenu()
             }
             is Salesman -> {
-                do {
-                    salesmanMenu()
-                } while (option != 0)
+                salesmanMenu()
             }
             is Cashier -> {
-                do {
-                    cashierMenu()
-                } while (option != 0)
+                cashierMenu()
             }
             is Administrator -> {
-                do {
-                    administratorMenu()
-                } while (option != 0)
+                administratorMenu()
             }
             else -> println("Not found")
         }
@@ -89,18 +30,173 @@ fun main(args: Array<String>) {
 }
 
 fun associateMenu() {
-    println("")
+    do {
+        println("1. mostrar peliculas disponibles")
+        println("2. ordenar peliculas por genero")
+        println("3. ordenar peliculas por director")
+        println("4. ordenar peliculas por actores")
+        println("0. salir")
+        println("ingrese una opcion: ")
+        var op: String? = readLine()
+        println("\u001Bc")
+        when (op) {
+            "1" -> {
+                showMovies()
+            }
+            "2" -> {
+                sortByGenre()
+                showMovies()
+            }
+            "3" -> {
+                sortByDirector()
+                showMovies()
+            }
+            "4" -> {
+                sortByActors()
+                showMovies()
+            }
+        }
+
+    } while (op != "0")
 }
+
 
 fun salesmanMenu() {
-    println("")
+    do {
+        println("1. rentar pelicula")
+        println("2. vender pelicula")
+        println("3. devolver pelicula")
+        println("4. verificar pelicula")
+        println("0. salir")
+        println("ingrese una opcion: ")
+        var op: String? = readLine()
+        println("\u001Bc")
+        when (op) {
+            "1" -> {
+                rentMovie()
+            }
+            "2" -> {
+                sellMovie()
+            }
+            "3" -> {
+                receivesDevolution()
+            }
+            "4" -> {
+                verifyMovieState()
+            }
+        }
+
+    } while (op != "0")
 }
 
+
 fun cashierMenu() {
-    println("")
+    do {
+        println("1. registrar devolucion tardia")
+        println("2. ver ingresos")
+        println("0. salir")
+        println("ingrese una opcion: ")
+        var op: String? = readLine()
+        println("\u001Bc")
+        when (op) {
+            "1" -> {
+                receivesDevolution()
+            }
+            "2" -> {
+                showEarnings()
+            }
+        }
+
+    } while (op != "0")
 }
 
 fun administratorMenu() {
-    println("")
+    do {
+        println("1. eliminar pelicula")
+        println("2. registrar pelicula")
+        println("3. aumentar copias de pelicula")
+        println("4. registrar asociado")
+        println("5. registrar salesman")
+        println("0. salir")
+        println("ingrese una opcion: ")
+        var op: String? = readLine()
+        println("\u001Bc")
+        when (op) {
+            "1" -> {
+                deleteMovie()
+            }
+            "2" -> {
+                registerMovie()
+            }
+            "3" -> {
+                registerMovieCopies()
+            }
+            "4" -> {
+                registerAssociate()
+            }
+            "5" -> {
+                registerSalesman()
+            }
+        }
+
+    } while (op != "0")
+}
+
+fun registerSalesman() {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+}
+
+fun registerAssociate() {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+}
+
+fun registerMovieCopies() {
+    club.registerMovieCopies()
+}
+
+fun deleteMovie() {
+    club.deleteMovie()
+}
+
+fun registerMovie() {
+    club.registerMovie()
+}
+
+fun sortByActors() {
+    club.showMoviesByActors()
+}
+
+fun sortByDirector() {
+    club.showMoviesByDirector()
+}
+
+fun sortByGenre() {
+    club.showMoviesByGenre()
+}
+
+fun showMovies() {
+    club.showMovies()
+}
+
+fun verifyMovieState() {
+    club.isMovieAvailable()
+}
+
+fun receivesDevolution() {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+}
+
+fun sellMovie() {
+    club.sellMovie()
+}
+
+fun rentMovie() {
+    println()
+    club.rentMovie()
+
+}
+
+fun showEarnings() {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
 }
 
