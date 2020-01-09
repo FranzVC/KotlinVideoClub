@@ -1,31 +1,42 @@
 import java.util.*
+
 var club = VideoClub()
+var username = "username"
 
 fun main(args: Array<String>) {
-    var user = Associate("luis", "av. america #11", 77407521, Date(12122019), Date(20191212))
-    var movie = Movie("IT",20.0, 2018, "asdas", "dasdasdasd", "EN", "ES,EU,IT", "terror", 120, "premiere", false,8)
+    var associate = Associate("luis", "av. america #11", 77407521, Date(12122019), Date(20191212))
+    var cashier = Cashier("cash", "av. america #11", 77407521, Date(12122019), Date(20191212))
+    var administrator = Administrator("admin", "av. america #11", 77407521, Date(12122019), Date(20191212))
+    var salesman = Salesman("sales", "av. america #11", 77407521, Date(12122019), Date(20191212))
+    var movie = Movie("IT", 20.0, 2018, "asdas", "dasdasdasd", "EN", "ES,EU,IT", "terror", 120, "premiere",true, 8)
 
     club.movies.add(movie)
-    club.users.add(user)
-    println("ingrese su nombre de usuario")
+    club.users.add(administrator)
+    club.users.add(associate)
+    club.users.add(cashier)
+    club.users.add(salesman)
 
-    var username = readLine()
     username?.let {
-        when (club.findUserByName(it)) {
-            is Associate -> {
-                associateMenu()
+        do {
+            println("ingrese su nombre de usuario")
+            username = readLine()!!
+
+            when (club.findUserByName(username)) {
+                is Associate -> {
+                    associateMenu()
+                }
+                is Salesman -> {
+                    salesmanMenu()
+                }
+                is Cashier -> {
+                    cashierMenu()
+                }
+                is Administrator -> {
+                    administratorMenu()
+                }
+                else -> println("Not found")
             }
-            is Salesman -> {
-                salesmanMenu()
-            }
-            is Cashier -> {
-                cashierMenu()
-            }
-            is Administrator -> {
-                administratorMenu()
-            }
-            else -> println("Not found")
-        }
+        } while (username != "0")
     }
 }
 
@@ -59,7 +70,6 @@ fun associateMenu() {
 
     } while (op != "0")
 }
-
 
 fun salesmanMenu() {
     do {
@@ -143,11 +153,11 @@ fun administratorMenu() {
 }
 
 fun registerSalesman() {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    club.registerSalesman()
 }
 
 fun registerAssociate() {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    club.registerAssociate()
 }
 
 fun registerMovieCopies() {
@@ -183,7 +193,7 @@ fun verifyMovieState() {
 }
 
 fun receivesDevolution() {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    club.receivesDevolution()
 }
 
 fun sellMovie() {
@@ -191,9 +201,11 @@ fun sellMovie() {
 }
 
 fun rentMovie() {
-    println()
-    club.rentMovie()
-
+    println("ingrese nombre de pelicula: ")
+    var movieName = readLine()!!
+    println("ingrese nombre de usuario: ")
+    var username = readLine()!!
+    club.rentMovie(movieName, username)
 }
 
 fun showEarnings() {

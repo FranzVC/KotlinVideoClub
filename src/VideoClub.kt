@@ -9,11 +9,10 @@ class VideoClub {
     var administrators = mutableListOf<Administrator>()
 
     fun rentMovie(movieName: String, username: String) {
-
         val movieFound = searchMovie(movieName)
         movieFound?.let {
             val associate = associates.find { it.name == username }
-            associate?.moviesRented?.add(movieFound)
+            associate?.let { it.moviesRented.add(movieFound) }
         }
     }
 
@@ -29,7 +28,6 @@ class VideoClub {
         println("\ttitle\tprice\tduration\tgenre")
         for ((index, movie) in movies.filter { it.state }.withIndex()) {
             println("${index + 1} \t ${movie.title} \t ${movie.price} \t ${movie.duration}\t${movie.filmGenre}")
-
         }
         println("\n\n\n")
     }
@@ -83,7 +81,6 @@ class VideoClub {
         println("insert quantity of copies :")
         var quantity: Int = readLine()!!.toInt()
         println("\n\n")
-
         var movie = Movie(title, price, filmedYear, directors, actors, language, availableLanguages, filmGenre, duration, popularity, state, quantity)
         movies.add(movie)
 
@@ -116,5 +113,58 @@ class VideoClub {
         }.also {
             println("NO Disponible\n\n")
         }
+    }
+
+    fun registerSalesman() {
+        println("insert salesman name: ")
+        var name: String = readLine()!!
+        println("insert salesman address: ")
+        var address: String = readLine()!!
+        println("insert salesman phone number: ")
+        var number: Int = readLine()!!.toInt()
+        println("insert salesman date of birth: ")
+        var dateOfBirth: Long = readLine()!!.toLong()
+        println("insert salesman date started: ")
+        var dateStarted: Long = readLine()!!.toLong()
+        var salesman = Salesman(name, address, number, Date(dateOfBirth), Date(dateStarted))
+        salesmans.add(salesman)
+
+        println("registered successfully!!")
+    }
+
+    fun registerAssociate() {
+        println("insert associate name: ")
+        var name: String = readLine()!!
+        println("insert associate address: ")
+        var address: String = readLine()!!
+        println("insert associate phone number: ")
+        var number: Int = readLine()!!.toInt()
+        println("insert associate date of birth: ")
+        var dateOfBirth: Long = readLine()!!.toLong()
+        println("insert associate date started: ")
+        var dateStarted: Long = readLine()!!.toLong()
+
+        val associate = Associate(name, address, number, Date(dateOfBirth), Date(dateStarted))
+        associates.add(associate)
+        println("registered successfully!!")
+    }
+
+    fun receivesDevolution() {
+        println("ingrese nombre de usuario: ")
+        var username = readLine()!!
+        var associate = associates.find { it.name == username }
+        associate?.let {
+            associate.showMoviesRented()
+            println("ingrese nombre de pelicula: ")
+            var movieName = readLine()!!
+            var movie = associate.moviesRented.find { it.title == movieName }
+            movie?.let {
+                associate.moviesRented.remove(movie)
+            }
+        }
+    }
+
+    fun showMoviesRented() {
+
     }
 }
