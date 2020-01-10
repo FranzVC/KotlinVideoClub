@@ -126,7 +126,7 @@ class VideoClub {
         var dateOfBirth: Long = readLine()!!.toLong()
         println("insert salesman date started: ")
         var dateStarted: Long = readLine()!!.toLong()
-        var salesman = Salesman(name, address, number, Date(dateOfBirth), Date(dateStarted))
+        var salesman = Salesman(name, address, number, dateOfBirth, dateStarted)
         salesmans.add(salesman)
 
         println("registered successfully!!")
@@ -144,7 +144,7 @@ class VideoClub {
         println("insert associate date started: ")
         var dateStarted: Long = readLine()!!.toLong()
 
-        val associate = Associate(name, address, number, Date(dateOfBirth), Date(dateStarted))
+        val associate = Associate(name, address, number, dateOfBirth, dateStarted)
         associates.add(associate)
         println("registered successfully!!")
     }
@@ -162,9 +162,5 @@ class VideoClub {
                 associate.moviesRented.remove(movie)
             }
         }
-    }
-
-    fun showMoviesRented() {
-
     }
 }
