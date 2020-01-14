@@ -1,11 +1,10 @@
-import java.util.* /** TODO: need to remove this line because it is not necesarry **/
 
 class VideoClub {
     var movies = mutableListOf<Movie>()
     var users = mutableListOf<User>()
     var associates = mutableListOf<Associate>()
-    var salesmans = mutableListOf<Salesman>()
-    var cashiers = mutableListOf<Cashier>() /** TODO: need to remove the  variables **/
+    var salesMans = mutableListOf<Salesman>()
+    var cashiers = mutableListOf<Cashier>()
     var administrators = mutableListOf<Administrator>()
 
     fun rentMovie(movieName: String, username: String) {
@@ -18,10 +17,6 @@ class VideoClub {
 
     private fun searchMovie(movieName: String): Movie? {
         return movies.find { it.title == movieName }
-    }
-
-    fun findUserByName(username: String): User? {
-        return users.find { it.name == username }
     }
 
     fun showMovies() {
@@ -117,24 +112,25 @@ class VideoClub {
 
     fun registerSalesman() {
         println("insert salesman name: ")
-        var name: String = readLine()!!
+        val name: String = readLine()!!
         println("insert salesman address: ")
-        var address: String = readLine()!!
+        val address: String = readLine()!!
         println("insert salesman phone number: ")
-        var number: Int = readLine()!!.toInt()
+        val number: Int = readLine()!!.toInt()
         println("insert salesman date of birth: ")
-        var dateOfBirth: Long = readLine()!!.toLong()
+        val dateOfBirth: Long = readLine()!!.toLong()
         println("insert salesman date started: ")
-        var dateStarted: Long = readLine()!!.toLong()
-        var salesman = Salesman(name, address, number, dateOfBirth, dateStarted)
-        salesmans.add(salesman)
+        val dateStarted: Long = readLine()!!.toLong()
+        val salesman = Salesman(name, address, number, dateOfBirth, dateStarted)
+        salesMans.add(salesman)
+        users.add(salesman)
 
         println("registered successfully!!")
     }
 
     fun registerAssociate() {
         println("insert associate name: ")
-        var name: String = readLine()!!
+        val name: String = readLine()!!
         println("insert associate address: ")
         var address: String = readLine()!!
         println("insert associate phone number: ")
@@ -146,18 +142,19 @@ class VideoClub {
 
         val associate = Associate(name, address, number, dateOfBirth, dateStarted)
         associates.add(associate)
+        users.add(associate)
         println("registered successfully!!")
     }
 
     fun receivesDevolution() {
         println("ingrese nombre de usuario: ")
-        var username = readLine()!!
-        var associate = associates.find { it.name == username }
+        val username = readLine()!!
+        val associate = associates.find { it.name == username }
         associate?.let {
             associate.showMoviesRented()
             println("ingrese nombre de pelicula: ")
-            var movieName = readLine()!!
-            var movie = associate.moviesRented.find { it.title == movieName }
+            val movieName = readLine()!!
+            val movie = associate.moviesRented.find { it.title == movieName }
             movie?.let {
                 associate.moviesRented.remove(movie)
             }

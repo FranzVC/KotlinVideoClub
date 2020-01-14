@@ -1,4 +1,4 @@
-import java.util.* /** TODO: remove this because it is not necessary **/
+import User.Companion.EXIT_OPTION
 
 class Associate(override val name: String,
                 override val address: String,
@@ -6,6 +6,11 @@ class Associate(override val name: String,
                 override val dateOfBirth: Long,
                 override val dateStarted: Long,
                 var moviesRented: MutableList<Movie> = mutableListOf()):User{
+
+    val SHOW_MOVIES_OPTION = "1"
+    val SORT_BY_GENRE_OPTION = "2"
+    val SORT_BY_DIRECTOR_OPTION = "3"
+    val SORT_BY_ACTORS_OPTION = "4"
 
     override fun toString(): String {
         return "name: $name, address: $address, number: $number," + moviesRented.toString()
@@ -23,35 +28,51 @@ class Associate(override val name: String,
         associateMenu()
     }
 
-    /** TODO: Need to refactor these part maybe you need to think something design patter like factory or strateggy **/
+    /** TODO: Need to refactor these part maybe you need to think something design patter like factory or strategy **/
     private fun associateMenu() {
         do {
-            println("1. mostrar peliculas disponibles")
-            println("2. ordenar peliculas por genero")
-            println("3. ordenar peliculas por director")
-            println("4. ordenar peliculas por actores")
-            println("0. salir")
+            println("$SHOW_MOVIES_OPTION. mostrar peliculas disponibles")
+            println("$SORT_BY_GENRE_OPTION. ordenar peliculas por genero")
+            println("$SORT_BY_DIRECTOR_OPTION. ordenar peliculas por director")
+            println("$SORT_BY_ACTORS_OPTION. ordenar peliculas por actores")
+            println("$EXIT_OPTION. salir")
             println("ingrese una opcion: ")
             var op: String? = readLine()
             println("\u001Bc")
             when (op) {
-                "1" -> {
+                SHOW_MOVIES_OPTION -> {
                     showMovies()
                 }
-                "2" -> {
+                SORT_BY_GENRE_OPTION -> {
                     sortByGenre()
                     showMovies()
                 }
-                "3" -> {
+                SORT_BY_DIRECTOR_OPTION -> {
                     sortByDirector()
                     showMovies()
                 }
-                "4" -> {
+                SORT_BY_ACTORS_OPTION -> {
                     sortByActors()
                     showMovies()
                 }
             }
 
-        } while (op != "0") /** TODO: What this magic number means? **/
+        } while (op != EXIT_OPTION)
+    }
+
+    private fun sortByActors() {
+        club.showMoviesByActors()
+    }
+
+    private fun sortByDirector() {
+        club.showMoviesByDirector()
+    }
+
+    private fun sortByGenre() {
+        club.showMoviesByGenre()
+    }
+
+    private fun showMovies() {
+        club.showMovies()
     }
 }
