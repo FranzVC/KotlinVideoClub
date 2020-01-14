@@ -1,4 +1,4 @@
-import java.util.*
+import java.util.* /** TODO: need to remove this because it is not necessary **/
 
 var club = VideoClub()
 var username = "username"
@@ -28,7 +28,7 @@ fun main(args: Array<String>) {
 }
 
 
-
+/** TODO: need to move methods to administrator because they belong its **/
 fun registerSalesman() {
     club.registerSalesman()
 }
@@ -48,7 +48,7 @@ fun deleteMovie() {
 fun registerMovie() {
     club.registerMovie()
 }
-
+/** TODO: these are methods that belongs to salesman */
 fun sortByActors() {
     club.showMoviesByActors()
 }
@@ -76,7 +76,7 @@ fun receivesDevolution() {
 fun sellMovie() {
     club.sellMovie()
 }
-
+/** TODO: This are method belongs to associate **/
 fun rentMovie() {
     println("ingrese nombre de pelicula: ")
     var movieName = readLine()!!

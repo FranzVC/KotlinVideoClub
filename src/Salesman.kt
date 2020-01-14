@@ -1,10 +1,11 @@
-import java.util.*
+import java.util.* /**TODO: need to remove this line because it is not necessary **/
 
 class Salesman(override val name: String, override val address: String, override val number: Int, override val dateOfBirth: Long, override val dateStarted: Long):User{
     override fun menu() {
         salesmanMenu()
     }
 
+    /** TODO: need to think to apply in some design pattern like factory method **/
     private fun salesmanMenu() {
         do {
             println("1. rentar pelicula")

@@ -1,11 +1,11 @@
-import java.util.*
+import java.util.* /** TODO: need to remove this line because it is not necesarry **/
 
 class VideoClub {
     var movies = mutableListOf<Movie>()
     var users = mutableListOf<User>()
     var associates = mutableListOf<Associate>()
     var salesmans = mutableListOf<Salesman>()
-    var cashiers = mutableListOf<Cashier>()
+    var cashiers = mutableListOf<Cashier>() /** TODO: need to remove the  variables **/
     var administrators = mutableListOf<Administrator>()
 
     fun rentMovie(movieName: String, username: String) {

@@ -1,4 +1,4 @@
-import java.util.*
+import java.util.* /** TODO: neeed to remove this because is not necessary */
 
 class Administrator(override val name: String, override val address: String, override val number: Int, override val dateOfBirth: Long, override val dateStarted: Long):User{
     override fun menu() {
@@ -16,6 +16,7 @@ class Administrator(override val name: String, override val address: String, ove
             println("ingrese una opcion: ")
             var op: String? = readLine()
             println("\u001Bc")
+            /** TODO: Avoid to use magic numbers **/
             when (op) {
                 "1" -> {
                     deleteMovie()
@@ -34,6 +35,6 @@ class Administrator(override val name: String, override val address: String, ove
                 }
             }
 
-        } while (op != "0")
+        } while (op != "0") /** TODO: What this magic number means **/
     }
 }

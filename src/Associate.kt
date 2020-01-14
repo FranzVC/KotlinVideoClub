@@ -1,4 +1,4 @@
-import java.util.*
+import java.util.* /** TODO: remove this because it is not necessary **/
 
 class Associate(override val name: String,
                 override val address: String,
@@ -23,6 +23,7 @@ class Associate(override val name: String,
         associateMenu()
     }
 
+    /** TODO: Need to refactor these part maybe you need to think something design patter like factory or strateggy **/
     private fun associateMenu() {
         do {
             println("1. mostrar peliculas disponibles")
@@ -51,6 +52,6 @@ class Associate(override val name: String,
                 }
             }
 
-        } while (op != "0")
+        } while (op != "0") /** TODO: What this magic number means? **/
     }
 }

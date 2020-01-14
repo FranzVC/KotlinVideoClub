@@ -1,4 +1,4 @@
-import java.util.*
+import java.util.* /** TODO: need to remove this line because it is not necessary **/
 
 class Cashier(override val name: String,
               override val address: String,
@@ -9,6 +9,7 @@ class Cashier(override val name: String,
         cashierMenu()
     }
 
+    /** TODO: need to refactor this part using some design patter like factory method **/
     private fun cashierMenu() {
         do {
             println("1. registrar devolucion tardia")
