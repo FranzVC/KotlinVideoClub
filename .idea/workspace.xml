@@ -2,14 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9198413c-a862-472a-a4ad-125f7d39bd89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Administrator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Associate.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Cashier.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Salesman.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/0/5055ffa7487ae7db9a1d428f413eaf73442b5f19" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/0/5055ffa7487ae7db9a1d428f413eaf73442b5f19" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a6a0d99b5f33125425d92974df2beeda5b85bd6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a6a0d99b5f33125425d92974df2beeda5b85bd6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af8e5958a1307a071949791fa43674948162dc2c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af8e5958a1307a071949791fa43674948162dc2c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c0dd2aafe3577e66697374c775acf934f28e6504" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c0dd2aafe3577e66697374c775acf934f28e6504" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c39605e4adc84db85825f65225091618bdaa3f94" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c39605e4adc84db85825f65225091618bdaa3f94" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/ccec589956c8c4f131f8b482075636b13221df9f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/ccec589956c8c4f131f8b482075636b13221df9f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Administrator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Administrator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Associate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Associate.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cashier.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cashier.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Salesman.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Salesman.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VideoClub.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/VideoClub.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstExample/Administrator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstExample/Administrator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstExample/AppKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstExample/AppKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstExample/Associate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstExample/Associate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstExample/Cashier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstExample/Cashier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstExample/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstExample/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstExample/Salesman.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstExample/Salesman.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstExample/User$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstExample/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstExample/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstExample/UserValidatorFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstExample/VideoClub$showMoviesByActors$$inlined$sortBy$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstExample/VideoClub$showMoviesByDirector$$inlined$sortBy$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstExample/VideoClub$showMoviesByDirector$$inlined$sortBy$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstExample/VideoClub$showMoviesByGenre$$inlined$sortBy$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstExample/VideoClub$showMoviesByGenre$$inlined$sortBy$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstExample/VideoClub.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstExample/VideoClub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Administrator.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Associate.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cashier.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Movie.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Movie.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Salesman.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/User.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserValidatorFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VideoClub.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/VideoClub.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,102 +48,129 @@
     <session id="2100392709">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.14" value="3" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="kt" value="8" />
+          <entry key="kt" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Kotlin" value="8" />
+          <entry key="Kotlin" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="kt" value="764" />
+          <entry key="kt" value="3412" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Kotlin" value="764" />
+          <entry key="Kotlin" value="3412" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UserValidatorFactory.kt">
+        <entry file="file://$PROJECT_DIR$/src/entities/Administrator.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="306">
+              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app.kt">
+        <entry file="file://$PROJECT_DIR$/src/AssociateContext.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="34">
+              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/VideoClub.kt">
+        <entry file="file://$PROJECT_DIR$/src/entities/Associate.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="124" column="17" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
+            <state relative-caret-position="442">
+              <caret line="38" column="50" lean-forward="true" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Administrator.kt">
+        <entry file="file://$PROJECT_DIR$/src/entities/Cashier.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="323">
+              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entities/Copy.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="2" column="39" lean-forward="true" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Associate.kt">
+        <entry file="file://$PROJECT_DIR$/src/entities/Salesman.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+            <state relative-caret-position="357">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding>
+                <element signature="e#18#84#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cashier.kt">
+        <entry file="file://$PROJECT_DIR$/src/CashierContext.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="119">
+              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Salesman.kt">
+        <entry file="file://$PROJECT_DIR$/src/AdministratorContext.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+            <state relative-caret-position="34">
+              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/User.kt">
+        <entry file="file://$PROJECT_DIR$/src/SalesmanContext.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="17">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entities/Actor.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -129,10 +181,24 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>op</find>
+      <find>club</find>
+      <find>user.videoClub</find>
+      <find>videoClub: VideoClub</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>option</replace>
+      <replace>videoClub</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -143,15 +209,26 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Movie.kt" />
         <option value="$PROJECT_DIR$/src/UserValidatorFactory.kt" />
-        <option value="$PROJECT_DIR$/src/User.kt" />
-        <option value="$PROJECT_DIR$/src/Administrator.kt" />
-        <option value="$PROJECT_DIR$/src/Associate.kt" />
-        <option value="$PROJECT_DIR$/src/Salesman.kt" />
-        <option value="$PROJECT_DIR$/src/Cashier.kt" />
+        <option value="$PROJECT_DIR$/src/AssociateOptions.kt" />
+        <option value="$PROJECT_DIR$/src/Actor.kt" />
+        <option value="$PROJECT_DIR$/src/Copy.kt" />
+        <option value="$PROJECT_DIR$/src/Movie.kt" />
         <option value="$PROJECT_DIR$/src/VideoClub.kt" />
+        <option value="$PROJECT_DIR$/src/Options.kt" />
+        <option value="$PROJECT_DIR$/src/User.kt" />
         <option value="$PROJECT_DIR$/src/app.kt" />
+        <option value="$PROJECT_DIR$/src/UserMenuStrategy.kt" />
+        <option value="$PROJECT_DIR$/src/Context.kt" />
+        <option value="$PROJECT_DIR$/src/SalesmanContext.kt" />
+        <option value="$PROJECT_DIR$/src/AdministratorContext.kt" />
+        <option value="$PROJECT_DIR$/src/CashierContext.kt" />
+        <option value="$PROJECT_DIR$/src/AssociateContext.kt" />
+        <option value="$PROJECT_DIR$/src/Associate.kt" />
+        <option value="$PROJECT_DIR$/src/Administrator.kt" />
+        <option value="$PROJECT_DIR$/src/Cashier.kt" />
+        <option value="$PROJECT_DIR$/src/Salesman.kt" />
+        <option value="$PROJECT_DIR$/src/entities/Salesman.kt" />
       </list>
     </option>
   </component>
@@ -167,8 +244,8 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="420" />
     <option name="y" value="-8" />
     <option name="width" value="1040" />
     <option name="height" value="744" />
@@ -179,7 +256,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,12 +268,25 @@
               <item name="KotlinVideoClub" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="KotlinVideoClub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KotlinVideoClub" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KotlinVideoClub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KotlinVideoClub" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,14 +294,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579041957571" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580160258887" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Git/Git Bash.lnk" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="utils" />
+      <recent name="entities" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -280,12 +375,20 @@
       <workItem from="1578508744129" duration="14070000" />
       <workItem from="1578597691129" duration="9649000" />
       <workItem from="1578682554527" duration="8157000" />
-      <workItem from="1579037300340" duration="4327000" />
+      <workItem from="1579037300340" duration="18950000" />
+      <workItem from="1579278164061" duration="91000" />
+      <workItem from="1579546210170" duration="9257000" />
+      <workItem from="1579633658656" duration="315000" />
+      <workItem from="1579634016006" duration="1424000" />
+      <workItem from="1579636578721" duration="7787000" />
+      <workItem from="1579893681983" duration="7437000" />
+      <workItem from="1580150506155" duration="757000" />
+      <workItem from="1580151730693" duration="8430000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79394000" />
+    <option name="totallyTimeSpent" value="129515000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -298,9 +401,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1433902" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15618336" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -309,7 +411,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.17575084" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.17575084" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933258" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -331,38 +433,6 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32995737" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1433902" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.17575084" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933258" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.32925472" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32107022" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.32925472" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="SonarLint" order="11" weight="0.32814237" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32814237" />
-      <window_info anchor="bottom" id="Educational.CheckDetails" order="13" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32995737" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -378,13 +448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
           <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Movie.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -474,59 +537,118 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/User.kt">
+    <entry file="file://$PROJECT_DIR$/src/entities/VideoClub.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Administrator.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Salesman.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cashier.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/VideoClub.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="124" column="17" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
+        <state relative-caret-position="527">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserValidatorFactory.kt">
+    <entry file="file://$PROJECT_DIR$/src/entities/User.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="136">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Associate.kt">
+    <entry file="file://$PROJECT_DIR$/src/entities/Movie.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+        <state relative-caret-position="136">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Options.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserMenuStrategy.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/Actor.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/Copy.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="2" column="39" lean-forward="true" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AdministratorContext.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SalesmanContext.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CashierContext.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AssociateContext.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/Associate.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="38" column="50" lean-forward="true" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/Administrator.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/Cashier.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/Salesman.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="e#18#84#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

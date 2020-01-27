@@ -1,3 +1,4 @@
+package entities
 
 class VideoClub {
     var movies = mutableListOf<Movie>()
@@ -27,7 +28,6 @@ class VideoClub {
         println("\n\n\n")
     }
 
-
     fun sellMovie() {
         println("ingrese nombre de pelicula: ")
         var movieName = readLine()
@@ -48,7 +48,7 @@ class VideoClub {
     }
 
     fun showMoviesByActors() {
-        movies.sortBy { it.actors }
+        //movies.sortBy { it.actors }
     }
 
     fun registerMovie() {
@@ -60,8 +60,6 @@ class VideoClub {
         val filmedYear: Int = readLine()!!.toInt()
         println("insert directors names :")
         val directors: String = readLine()!!
-        println("insert actors names :")
-        val actors: String = readLine()!!
         println("insert language :")
         val language: String = readLine()!!
         println("insert available languages :")
@@ -73,11 +71,11 @@ class VideoClub {
         println("insert popularity (premier,normal or on sale) :")
         var popularity: String = readLine()!!
         var state: Boolean = true
-        println("insert quantity of copies :")
-        var quantity: Int = readLine()!!.toInt()
+
         println("\n\n")
-        var movie = Movie(title, price, filmedYear, directors, actors, language, availableLanguages, filmGenre, duration, popularity, state, quantity)
+        var movie = Movie(title, price, filmedYear, directors, language, availableLanguages, filmGenre, duration, popularity, state)
         movies.add(movie)
+        //register actors and copies
 
         println("movie inserted successfully!!")
     }
@@ -93,9 +91,10 @@ class VideoClub {
         var movieName = readLine()!!
         var movie = searchMovie(movieName)
         movie?.let {
-            println("ingrese cantidad de copias para aniadir:")
-            var quantity = readLine()!!.toInt()
-            movie.quantity += quantity
+            println("ingrese id de copia:")
+            var id = readLine()!!.toInt()
+            val copy: Copy = Copy(id.toString(), movie.title)
+            movie.copies.add(copy)
         }
     }
 

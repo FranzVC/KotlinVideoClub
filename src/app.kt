@@ -1,37 +1,37 @@
-import User.Companion.EXIT_OPTION
+import entities.*
+import utils.Options
 
-var club = VideoClub()
-var username = "username"
 
 fun main(args: Array<String>) {
+
+    var videoClub = VideoClub()
+    var username = "username"
     val associate = Associate("luis", "av. america #11", 77407521, 12122019, 20191212)
     val cashier = Cashier("cash", "av. america #11", 77407521, 12122019, 20191212)
     val administrator = Administrator("admin", "av. america #11", 77407521, 12122019, 20191212)
     val salesman = Salesman("sales", "av. america #11", 77407521, 12122019, 20191212)
-    val movie = Movie("IT", 20.0, 2018, "asdas", "dasdasdasd", "EN", "ES,EU,IT", "terror", 120, "premiere", true, 8)
+    val movie = Movie("IT", 20.0, 2018, "asdas", "EN", "ES,EU,IT", "terror", 120, "premiere", true)
 
-    club.movies.add(movie)
+    videoClub.movies.add(movie)
 
-    club.users.add(administrator)
-    club.administrators.add(administrator)
+    videoClub.users.add(administrator)
+    videoClub.administrators.add(administrator)
 
-    club.users.add(associate)
-    club.associates
+    videoClub.users.add(associate)
+    videoClub.associates
 
-    club.users.add(cashier)
-    club.cashiers.add(cashier)
+    videoClub.users.add(cashier)
+    videoClub.cashiers.add(cashier)
 
-    club.users.add(salesman)
-    club.salesMans.add(salesman)
+    videoClub.users.add(salesman)
+    videoClub.salesMans.add(salesman)
 
     username.let {
         do {
             println("ingrese su nombre de usuario")
             username = readLine()!!
-            val userValidatorFactory = UserValidatorFactory(club.users).validateUser(username)
-            userValidatorFactory?.menu()
-
-        } while (username != EXIT_OPTION)
+            UserMenuStrategy(videoClub.users).showMenu(username,videoClub)
+        } while (username != Options.EXIT_OPTION.value)
     }
 }
 

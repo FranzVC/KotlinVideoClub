@@ -1,3 +1,4 @@
+package entities
 
 interface User{
     val name: String
@@ -6,9 +7,5 @@ interface User{
     val dateOfBirth: Long
     val dateStarted: Long
 
-    companion object {
-        val EXIT_OPTION = "0"
-    }
-
-    fun menu()
+    fun menu(videoClub: VideoClub)
 }

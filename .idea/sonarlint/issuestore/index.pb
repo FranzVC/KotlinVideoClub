@@ -18,3 +18,13 @@ D
 src/Movie.kt,1\4\1467951d1ab21339d20ed0fb17c0a868a38f7aee
 @
 src/VideoClub.kt,9\a\9a6a0d99b5f33125425d92974df2beeda5b85bd6
+<
+src/Actor.kt,b\e\be26947c144e8fd4d81754245070229601d6689a
+;
+src/Copy.kt,8\c\8ce4438fb5e8d8ceff1553c83c2c479053e5ca75
+G
+src/UserMenuStrategy.kt,1\9\198a69636d6843c88568582147f98bf6553dcda1
+>
+src/Options.kt,2\e\2ed5b435d6bbbf7807e0ba285284a006e9c14e77
+>
+src/Context.kt,6\4\64dc2edf47ee73be55b57fe130239a0ccba32e05
